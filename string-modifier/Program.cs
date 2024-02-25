@@ -12,9 +12,20 @@
             return newString;
         }
 
+        public static string CutLastLetter(string input)
+        {
+            string newString = "";
+            for (int i = 0; i < input.Length-1; i++)
+            {
+                newString += input[i];
+            }
+            return newString;
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine(CutFirstLetter("Random"));
+            Console.WriteLine(CutLastLetter("Random"));
         }
     }
 }
