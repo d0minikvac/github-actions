@@ -24,8 +24,8 @@
 
         static void Main(string[] args)
         {
-            Console.WriteLine(CutFirstLetter("Random"));
-            Console.WriteLine(CutLastLetter("Random"));
+            Console.WriteLine(CutFirstLetter("Elso"));
+            Console.WriteLine(CutLastLetter("Utolso"));
         }
     }
 }
