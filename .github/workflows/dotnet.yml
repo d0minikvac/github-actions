@@ -21,7 +21,7 @@ jobs:
       with:
         dotnet-version: 6.x
     - name: Restore dependencies
-      run: dotnet restore string-modifier.csproj
+      run: dotnet restore C:\Users\Dominik\Desktop\github-actions\string-modifier.csproj
     - name: Build
       run: dotnet build string-modifier.csproj
     - name: Test
