@@ -21,6 +21,6 @@ jobs:
       with:
         dotnet-version: 6.x
     - name: Restore dependencies
-      run: dotnet restore ./github-actions/string-modifier/string-modifier.csproj
+      run: dotnet restore
     - name: Build
-      run: dotnet build ./github-actions/string-modifier/string-modifier.csproj
+      run: dotnet build
