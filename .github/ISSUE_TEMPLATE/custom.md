@@ -1,9 +1,9 @@
 ---
 name: Custom issue template
 about: Describe this issue template's purpose here.
-title: 'Faulty tests'
-labels: 'bug, enhancement'
-assignees: 'd0minikvac'
+title: Faulty tests
+labels: bug, enhancement
+assignees: d0minikvac
 
 ---
 
