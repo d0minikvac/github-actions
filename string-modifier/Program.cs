@@ -13,6 +13,7 @@
             string result2 = sm.CutLastLetter(input);
             Console.WriteLine(result2);
 
+
         }
     }
 }
