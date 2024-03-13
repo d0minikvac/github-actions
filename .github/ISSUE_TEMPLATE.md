@@ -1,5 +1,8 @@
 ---
+name: Issue
 title: Faulty tests
+labels: tracking issue
+assignees: d0minikvac
 ---
 
-{{ payload.sender.login }}'s tests failed at {{ date | date('dddd, MMMM Do') }}.
+{{ payload.sender.login }} failed his tests
