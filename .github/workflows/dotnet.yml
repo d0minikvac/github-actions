@@ -26,3 +26,8 @@ jobs:
       run: dotnet build string-modifier/string-modifier.csproj
     - name: Test
       run: dotnet test TestStrings/TestStrings.csproj
+    - name: Create issue if tests failed
+      if: ${{ failure() }}
+      run: |
+        echo "A tesztek sikertelenek"
+        GITHUB_TOKEN="${{ secrets.GITHUB_TOKEN }}"
