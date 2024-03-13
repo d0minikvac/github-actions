@@ -16,6 +16,7 @@ namespace TestStrings
             Assert.Equal(expected, actual);
         }
 
+
         [Fact]
         public void CutLastLetter_ShouldCutLastLetter()
         {
