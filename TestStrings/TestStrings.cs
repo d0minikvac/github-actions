@@ -27,5 +27,17 @@ namespace TestStrings
 
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void FaultyTest()
+        {
+            string input = "Hello";
+            string expected = "Hello";
+
+            StringModifier sm = new StringModifier();
+            string actual = sm.CutLastLetter(input);
+
+            Assert.Equal(expected, actual);
+        }
     }
 }
