@@ -28,6 +28,8 @@ jobs:
       run: dotnet test TestStrings/TestStrings.csproj
     - name: Create issue if tests failed
       if: ${{ failure() }}
-      run: |
-        echo "A tesztek sikertelenek"
-        GITHUB_TOKEN="${{ secrets.GITHUB_TOKEN }}"
+      uses: JasonEtco/create-an-issue@v2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        filename: .github/issue-template.md
