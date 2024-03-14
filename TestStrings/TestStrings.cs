@@ -34,7 +34,7 @@ namespace TestStrings
         public void NotFaultyTest()
         {
             string input = "Hello";
-            string expected = "Hell";
+            string expected = "Hello";
 
             StringModifier sm = new StringModifier();
             string actual = sm.CutLastLetter(input);
