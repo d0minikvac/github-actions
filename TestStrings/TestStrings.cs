@@ -38,6 +38,7 @@ namespace TestStrings
             StringModifier sm = new StringModifier();
             string actual = sm.CutLastLetter(input);
 
+
             Assert.Equal(expected, actual);
         }
     }
