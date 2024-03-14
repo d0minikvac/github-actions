@@ -19,9 +19,3 @@ jobs:
     - name: Create Pull Request
       if: success()
       uses: peter-evans/create-pull-request@v6
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        commit-message: Automated pull request from successful tests
-        title: Automated Pull Request
-        body: This pull request was automatically generated because tests passed on the dev branch.
-        branch: main
