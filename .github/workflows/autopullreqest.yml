@@ -19,3 +19,6 @@ jobs:
     - name: Create Pull Request
       if: success()
       uses: peter-evans/create-pull-request@v6
+      with:
+          branch: main
+          token: ${{ secrets.GITHUB_TOKEN }}
