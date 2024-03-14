@@ -30,10 +30,10 @@ namespace TestStrings
         }
 
         [Fact]
-        public void FaultyTest()
+        public void NotFaultyTest()
         {
             string input = "Hello";
-            string expected = "Hello";
+            string expected = "Hell";
 
             StringModifier sm = new StringModifier();
             string actual = sm.CutLastLetter(input);
