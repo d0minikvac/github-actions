@@ -1,1 +1,1 @@
-Trying out github actions for random university task.
+github actions test
