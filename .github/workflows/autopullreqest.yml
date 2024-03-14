@@ -1,0 +1,27 @@
+name: Create Pull Request on Test Success
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Run tests
+      run: dotnet test TestStrings/TestStrings.csproj
+
+    - name: Create Pull Request
+      if: success()
+      uses: peter-evans/create-pull-request@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: Automated pull request from successful tests
+        title: Automated Pull Request
+        body: This pull request was automatically generated because tests passed on the dev branch.
+        branch: main
